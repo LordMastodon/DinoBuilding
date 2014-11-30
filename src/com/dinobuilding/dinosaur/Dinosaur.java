@@ -1,4 +1,4 @@
-package com.dinobuilding.dinosaurs;
+package com.dinobuilding.dinosaur;
 
 import javax.swing.*;
 
@@ -26,11 +26,20 @@ public class Dinosaur extends DinoBuildingObject {
     MapRegions mapRegions;
 
     String description;
+    String name;
 
     static ImageIcon icon;
 
     public void setIcon(String name) {
         icon = new ImageIcon("resources/dinosaurs/" + name + ".png");
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getName() {
+        return name;
     }
 // Age stuff is for a later time
 //    static ImageIcon babyIcon;
