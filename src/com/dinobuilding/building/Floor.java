@@ -17,7 +17,7 @@ public class Floor extends DinoBuildingGameObject {
     int floorNumber;
 
     public void setFloorNumber(int floorNum) {
-
+        this.floorNumber = floorNum;
     }
 
     public void setDinosaur(Dinosaur dino) {

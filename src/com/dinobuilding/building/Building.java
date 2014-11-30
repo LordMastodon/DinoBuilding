@@ -8,5 +8,11 @@ import com.dinobuilding.utilities.DinoBuildingGameObject;
 public class Building extends DinoBuildingGameObject {
     Floor[] floors = new Floor[]{};
 
+    int newSlot;
+
+    public void appendToFloors(Floor floor) {
+        newSlot = floors.length + 1;
+        floors[newSlot] = floor;
+    }
 
 }

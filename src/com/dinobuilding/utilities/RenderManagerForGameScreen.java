@@ -6,9 +6,10 @@ package com.dinobuilding.utilities;
 public class RenderManagerForGameScreen {
     public static DinoBuildingGameObject[] objectsToRender = new DinoBuildingGameObject[]{};
 
-    int newSlot = objectsToRender.length + 1;
+    int newSlot;
 
     public void appendToObjectsToRender(DinoBuildingGameObject dbo) {
+        newSlot = objectsToRender.length + 1;
         objectsToRender[newSlot] = dbo;
     }
 }
