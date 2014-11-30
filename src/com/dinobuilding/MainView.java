@@ -8,7 +8,7 @@ import java.io.IOException;
 
 import javax.swing.JPanel;
 
-import com.dinobuilding.screens.GameScreen;
+import com.dinobuilding.screens.BuildingScreen;
 import com.dinobuilding.screens.HowToPlayScreen;
 import com.dinobuilding.screens.MainMenuScreen;
 import com.dinobuilding.screens.OptionsScreen;
@@ -16,14 +16,14 @@ import com.dinobuilding.screens.OptionsScreen;
 public class MainView extends JPanel {
 
     MainMenuScreen mainMenu;
-    GameScreen game;
+    BuildingScreen game;
     HowToPlayScreen howToPlay;
     OptionsScreen options;
 
     public MainView() throws FontFormatException, IOException {
         setLayout(new CardLayout());
         mainMenu = new MainMenuScreen();
-        game = new GameScreen();
+        game = new BuildingScreen();
         howToPlay = new HowToPlayScreen();
         options = new OptionsScreen();
 

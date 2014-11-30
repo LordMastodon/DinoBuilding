@@ -11,11 +11,11 @@ import com.dinobuilding.Window;
 import com.dinobuilding.utilities.RenderManagerForGameScreen;
 
 @SuppressWarnings("serial")
-public class GameScreen extends JPanel {
+public class BuildingScreen extends JPanel {
 	
 	private volatile boolean running = true;
 
-    public GameScreen() {
+    public BuildingScreen() {
     	
         Thread t = new Thread(new Runnable() {
 

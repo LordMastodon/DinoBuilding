@@ -5,7 +5,7 @@ import javax.swing.*;
 /**
  * Created by Nate on 11/28/2014.
  */
-public class DinoBuildingObject {
+public class DinoBuildingGameObject {
 
     ImageIcon displayImage;
 

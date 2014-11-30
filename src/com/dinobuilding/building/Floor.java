@@ -2,14 +2,14 @@ package com.dinobuilding.building;
 
 import com.dinobuilding.dinosaur.Dinosaur;
 import com.dinobuilding.dinosaur.Dinosaurs;
-import com.dinobuilding.utilities.DinoBuildingObject;
+import com.dinobuilding.utilities.DinoBuildingGameObject;
 
 import javax.swing.*;
 
 /**
  * Created by Nate on 10/31/2014.
  */
-public class Floor extends DinoBuildingObject {
+public class Floor extends DinoBuildingGameObject {
     Dinosaur dinosaur;
 
     ImageIcon displayImage;

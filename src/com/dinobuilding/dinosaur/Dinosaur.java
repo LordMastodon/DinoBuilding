@@ -8,9 +8,9 @@ import com.dinobuilding.events.WrongFoodEatenEvent;
 import com.dinobuilding.dinosaurdata.Diet;
 import com.dinobuilding.paleontology.MapRegions;
 import com.dinobuilding.parties.DinosaurBehaviorAtParties;
-import com.dinobuilding.utilities.DinoBuildingObject;
+import com.dinobuilding.utilities.DinoBuildingGameObject;
 
-public class Dinosaur extends DinoBuildingObject {
+public class Dinosaur extends DinoBuildingGameObject {
     boolean enraged = false;
     boolean wrongFoodEaten = false;
 
