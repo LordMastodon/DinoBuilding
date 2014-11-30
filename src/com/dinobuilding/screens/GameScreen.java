@@ -3,10 +3,12 @@ package com.dinobuilding.screens;
 import java.awt.Dimension;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
+import java.awt.image.ImageObserver;
 
 import javax.swing.JPanel;
 
 import com.dinobuilding.Window;
+import com.dinobuilding.utilities.RenderManagerForGameScreen;
 
 @SuppressWarnings("serial")
 public class GameScreen extends JPanel {
@@ -51,6 +53,11 @@ public class GameScreen extends JPanel {
     public void paintComponent(Graphics g) {
         super.paintComponent(g);
         Graphics2D g2d = (Graphics2D) g.create();
+
+        for(int i = 0; i < RenderManagerForGameScreen.objectsToRender.length; i++) {
+            g2d.drawImage(RenderManagerForGameScreen.objectsToRender[i].getDisplayImage().getImage(), RenderManagerForGameScreen.objectsToRender[i].getX(), RenderManagerForGameScreen.objectsToRender[i].getY(), Window.observer);
+        }
+
         g2d.dispose();
     }
     

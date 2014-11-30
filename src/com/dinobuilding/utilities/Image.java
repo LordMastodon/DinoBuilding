@@ -8,9 +8,15 @@ import javax.swing.*;
 public class Image extends ImageIcon {
 
     ImageIcon icon;
+    String name;
+
+    public Image(String name) {
+        this.name = name;
+    }
 
     public ImageIcon getImage(String name) {
-        icon = new ImageIcon(";"
+        icon = new ImageIcon("");
+        return icon;
     }
 
 }

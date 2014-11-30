@@ -5,7 +5,11 @@ package com.dinobuilding.dinosaurs;
  */
 public class Dinosaurs {
 
-    public void initializeDinosaurs() {
+    Dinosaur[] listOfExistingDinosaurs = new Dinosaur[] {};
 
+    public void initializeDinosaurs() {
+        for (int i = 0; i < listOfExistingDinosaurs.length; i++) {
+            listOfExistingDinosaurs[i].initialize();
+        }
     }
 }

@@ -1,11 +1,9 @@
 package com.dinobuilding.paleontology;
 
-public enum MapRegion {
-    NORTH_AMERICA,
-    SOUTH_AMERICA,
-    ANTARCTICA,
-    AUSTRALIA,
-    ASIA,
-    EUROPE,
-    AFRICA
+import com.dinobuilding.utilities.DinoBuildingObject;
+
+/**
+ * Created by Nate on 11/28/2014.
+ */
+public class MapRegion extends DinoBuildingObject {
 }

@@ -1,8 +1,10 @@
 package com.dinobuilding.building;
 
+import com.dinobuilding.utilities.DinoBuildingObject;
+
 /**
  * Created by Nate on 10/31/2014.
  */
-public class Floor {
-    ImageIcon
+public class Floor extends DinoBuildingObject {
+    
 }

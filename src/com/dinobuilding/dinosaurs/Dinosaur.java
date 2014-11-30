@@ -6,10 +6,11 @@ import com.dinobuilding.dinosaurdata.Age;
 import com.dinobuilding.events.EnragedEvent;
 import com.dinobuilding.events.WrongFoodEatenEvent;
 import com.dinobuilding.dinosaurdata.Diet;
-import com.dinobuilding.paleontology.MapRegion;
+import com.dinobuilding.paleontology.MapRegions;
 import com.dinobuilding.parties.DinosaurBehaviorAtParties;
+import com.dinobuilding.utilities.DinoBuildingObject;
 
-public class Dinosaur {
+public class Dinosaur extends DinoBuildingObject {
     boolean enraged = false;
     boolean wrongFoodEaten = false;
 
@@ -22,7 +23,7 @@ public class Dinosaur {
 
     DinosaurBehaviorAtParties dinosaurBehaviorAtParties;
 
-    MapRegion mapRegion;
+    MapRegions mapRegions;
 
     String description;
 
@@ -77,6 +78,10 @@ public class Dinosaur {
 //    public Icon getElderlyIcon() {
 //        return elderlyIcon;
 //    }
+
+    public void initialize() {
+
+    }
 
     public void setDiet(Diet diet) {
         this.diet = diet;
@@ -136,12 +141,12 @@ public class Dinosaur {
         }
     }
 
-    public void setMapRegion(MapRegion mapRegion) {
-        this.mapRegion = mapRegion;
+    public void setMapRegions(MapRegions mapRegions) {
+        this.mapRegions = mapRegions;
     }
 
-    public MapRegion getMapRegion() {
-        return mapRegion;
+    public MapRegions getMapRegions() {
+        return mapRegions;
     }
 
 }
