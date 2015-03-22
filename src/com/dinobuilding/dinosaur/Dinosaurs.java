@@ -1,22 +1,22 @@
 package com.dinobuilding.dinosaur;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * Created by Nate on 10/31/2014.
  */
 public class Dinosaurs {
 
-    public static Dinosaur[] listOfExistingDinosaurs = new Dinosaur[] {};
-
-    int newSlot;
+    public static List<Dinosaur> listOfExistingDinosaurs = new ArrayList<Dinosaur>();
 
     public void appendToListOfExistingDinosaurs(Dinosaur dino) {
-        newSlot = listOfExistingDinosaurs.length + 1;
-        listOfExistingDinosaurs[newSlot] = dino;
+        listOfExistingDinosaurs.add(dino);
     }
 
     public void initializeDinosaurs() {
-        for (int i = 0; i < listOfExistingDinosaurs.length; i++) {
-            listOfExistingDinosaurs[i].initialize();
+        for (int i = 0; i < listOfExistingDinosaurs.size(); i++) {
+            listOfExistingDinosaurs.get(i).initialize();
         }
     }
 }

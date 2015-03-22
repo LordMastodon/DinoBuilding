@@ -1,15 +1,15 @@
 package com.dinobuilding.utilities;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * Created by Nate on 11/28/2014.
  */
 public class RenderManagerForGameScreen {
-    public static DinoBuildingGameObject[] objectsToRender = new DinoBuildingGameObject[]{};
-
-    int newSlot;
+    public static List<DinoBuildingGameObject> objectsToRender = new ArrayList<DinoBuildingGameObject>();
 
     public void appendToObjectsToRender(DinoBuildingGameObject dbo) {
-        newSlot = objectsToRender.length + 1;
-        objectsToRender[newSlot] = dbo;
+        objectsToRender.add(dbo);
     }
 }

@@ -54,8 +54,8 @@ public class BuildingScreen extends JPanel {
         super.paintComponent(g);
         Graphics2D g2d = (Graphics2D) g.create();
 
-        for(int i = 0; i < RenderManagerForGameScreen.objectsToRender.length; i++) {
-            g2d.drawImage(RenderManagerForGameScreen.objectsToRender[i].getDisplayImage().getImage(), RenderManagerForGameScreen.objectsToRender[i].getX(), RenderManagerForGameScreen.objectsToRender[i].getY(), Window.observer);
+        for(int i = 0; i < RenderManagerForGameScreen.objectsToRender.size(); i++) {
+            g2d.drawImage(RenderManagerForGameScreen.objectsToRender.get(i).getDisplayImage().getImage(), RenderManagerForGameScreen.objectsToRender.get(i).getX(), RenderManagerForGameScreen.objectsToRender.get(i).getY(), Window.observer);
         }
 
         g2d.dispose();

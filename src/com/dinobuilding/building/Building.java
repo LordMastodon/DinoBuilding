@@ -2,17 +2,17 @@ package com.dinobuilding.building;
 
 import com.dinobuilding.utilities.DinoBuildingGameObject;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * Created by Nate on 10/31/2014.
  */
 public class Building extends DinoBuildingGameObject {
-    Floor[] floors = new Floor[]{};
-
-    int newSlot;
+    List<Floor> floors = new ArrayList<Floor>();
 
     public void appendToFloors(Floor floor) {
-        newSlot = floors.length + 1;
-        floors[newSlot] = floor;
+        floors.add(floor);
     }
 
 }

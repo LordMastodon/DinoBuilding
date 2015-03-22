@@ -12,9 +12,8 @@ import com.dinobuilding.utilities.DinoBuildingGameObject;
 
 public class Dinosaur extends DinoBuildingGameObject {
     boolean enraged = false;
-    boolean wrongFoodEaten = false;
 
-    Age age;
+//    Age age;
 
     EnragedEvent onEnraged;
     WrongFoodEatenEvent onWrongFoodEaten;
@@ -27,6 +26,8 @@ public class Dinosaur extends DinoBuildingGameObject {
 
     String description;
     String name;
+
+    public int hunger;
 
     static ImageIcon icon;
 
@@ -92,6 +93,14 @@ public class Dinosaur extends DinoBuildingGameObject {
 
     }
 
+    public void setHunger(int i) {
+        this.hunger = i;
+    }
+
+    public int getHunger() {
+        return this.hunger;
+    }
+
     public void setDiet(Diet diet) {
         this.diet = diet;
     }
@@ -141,14 +150,14 @@ public class Dinosaur extends DinoBuildingGameObject {
         return onWrongFoodEaten;
     }
 
-    public boolean setOnWrongFoodEaten() {
-        if(wrongFoodEaten) {
-            this.onWrongFoodEaten.onWrongFoodEaten();
-            return wrongFoodEaten;
-        } else {
-            return wrongFoodEaten;
-        }
-    }
+//    public boolean setOnWrongFoodEaten() {
+//        if(wrongFoodEaten) {
+//            this.onWrongFoodEaten.onWrongFoodEaten();
+//            return wrongFoodEaten;
+//        } else {
+//            return wrongFoodEaten;
+//        }
+//    }
 
     public void setMapRegions(MapRegions mapRegions) {
         this.mapRegions = mapRegions;
