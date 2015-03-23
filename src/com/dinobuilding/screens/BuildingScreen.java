@@ -24,7 +24,7 @@ public class BuildingScreen extends JPanel {
                 while (running) {
                     repaint();
                     try {
-                            Thread.sleep(40);
+                            Thread.sleep(5);
                         } catch (InterruptedException ex) {
                             ex.printStackTrace();
                         }
