@@ -23,10 +23,8 @@ public class Floor extends DinoBuildingGameObject {
     public void setDinosaur(Dinosaur dino) {
 
         //This makes sure that it's a valid dinosaur
-        for (int i = 0; i < Dinosaurs.listOfExistingDinosaurs.size(); i++) {
-            if(dino == Dinosaurs.listOfExistingDinosaurs.get(i)) {
-                this.dinosaur = dino;
-            }
+        if (Dinosaurs.listOfExistingDinosaurs.contains(dino)) {
+            this.dinosaur = dino;
         }
     }
 
