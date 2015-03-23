@@ -35,19 +35,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BuildingScreen.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/dinobuilding/screens/BuildingScreen.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="163" max-vertical-offset="832">
-              <caret line="41" column="0" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
-              <folding>
-                <element signature="e#979#980#0" expanded="true" />
-                <element signature="e#1014#1015#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="MainMenuScreen.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/dinobuilding/screens/MainMenuScreen.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -95,16 +82,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MenuButton.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/dinobuilding/menufeatures/MenuButton.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="64" max-vertical-offset="512">
-              <caret line="28" column="40" selection-start-line="28" selection-start-column="40" selection-end-line="28" selection-end-column="40" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="HowToPlayScreen.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/dinobuilding/screens/HowToPlayScreen.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -115,10 +92,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Floor.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Floor.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/dinobuilding/building/Floor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.45257902" vertical-offset="0" max-vertical-offset="688">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="688">
               <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -127,14 +104,40 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="MapRegion.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/dinobuilding/paleontology/MapRegion.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="231" max-vertical-offset="832">
+              <caret line="61" column="1" selection-start-line="61" selection-start-column="1" selection-end-line="61" selection-end-column="1" />
+              <folding>
+                <element signature="e#525#535#0" expanded="true" />
+                <element signature="e#929#930#0" expanded="true" />
+                <element signature="e#964#965#0" expanded="true" />
+                <element signature="e#1328#1329#0" expanded="true" />
+                <element signature="e#1368#1369#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="FontConstants.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/dinobuilding/references/FontConstants.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-2.6666667" vertical-offset="0" max-vertical-offset="320">
-              <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+            <state vertical-scroll-proportion="-5.866667" vertical-offset="0" max-vertical-offset="320">
+              <caret line="11" column="30" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Image.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/dinobuilding/utilities/Image.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.31946754" vertical-offset="0" max-vertical-offset="601">
+              <caret line="14" column="5" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -156,7 +159,6 @@
         <option value="$PROJECT_DIR$/src/com/dinobuilding/utilities/FontReciever.java" />
         <option value="$PROJECT_DIR$/src/com/dinobuilding/utilities/FontHandler.java" />
         <option value="$PROJECT_DIR$/src/com/dinobuilding/screens/BuildingScreen.java" />
-        <option value="$PROJECT_DIR$/src/com/dinobuilding/references/FontConstants.java" />
         <option value="$PROJECT_DIR$/src/com/dinobuilding/menufeatures/MenuButton.java" />
         <option value="$PROJECT_DIR$/src/com/dinobuilding/dinosaur/Dinosaur.java" />
         <option value="$PROJECT_DIR$/src/com/dinobuilding/references/StringConstants.java" />
@@ -165,6 +167,9 @@
         <option value="$PROJECT_DIR$/src/com/dinobuilding/screens/OptionsScreen.java" />
         <option value="$PROJECT_DIR$/src/com/dinobuilding/dinosaur/Hunger.java" />
         <option value="$PROJECT_DIR$/src/com/dinobuilding/building/Floor.java" />
+        <option value="$PROJECT_DIR$/src/com/dinobuilding/paleontology/MapRegion.java" />
+        <option value="$PROJECT_DIR$/src/com/dinobuilding/references/FontConstants.java" />
+        <option value="$PROJECT_DIR$/src/com/dinobuilding/utilities/Image.java" />
       </list>
     </option>
   </component>
@@ -1071,17 +1076,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/dinobuilding/paleontology/MapRegion.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="415" max-vertical-offset="1072">
-          <caret line="40" column="28" selection-start-line="40" selection-start-column="28" selection-end-line="40" selection-end-column="28" />
-          <folding>
-            <element signature="e#814#815#0" expanded="true" />
-            <element signature="e#849#850#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/dinobuilding/utilities/DinoBuildingGameObject.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="560">
@@ -1097,14 +1091,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="224">
           <caret line="5" column="36" selection-start-line="5" selection-start-column="36" selection-end-line="5" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/dinobuilding/utilities/Image.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="416">
-          <caret line="16" column="30" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="41" />
           <folding />
         </state>
       </provider>
@@ -1155,16 +1141,6 @@
           <folding>
             <element signature="e#979#980#0" expanded="true" />
             <element signature="e#1014#1015#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/dinobuilding/references/FontConstants.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.6666667" vertical-offset="0" max-vertical-offset="320">
-          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1234,11 +1210,43 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/dinobuilding/building/Floor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.45257902" vertical-offset="0" max-vertical-offset="688">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="688">
           <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/dinobuilding/paleontology/MapRegion.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="231" max-vertical-offset="832">
+          <caret line="61" column="1" selection-start-line="61" selection-start-column="1" selection-end-line="61" selection-end-column="1" />
+          <folding>
+            <element signature="e#525#535#0" expanded="true" />
+            <element signature="e#929#930#0" expanded="true" />
+            <element signature="e#964#965#0" expanded="true" />
+            <element signature="e#1328#1329#0" expanded="true" />
+            <element signature="e#1368#1369#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/dinobuilding/references/FontConstants.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.866667" vertical-offset="0" max-vertical-offset="320">
+          <caret line="11" column="30" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/dinobuilding/utilities/Image.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.31946754" vertical-offset="0" max-vertical-offset="601">
+          <caret line="14" column="5" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
+          <folding />
         </state>
       </provider>
     </entry>

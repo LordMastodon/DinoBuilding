@@ -13,10 +13,4 @@ public class Image extends ImageIcon {
     public Image(String name) {
         this.name = name;
     }
-
-    public ImageIcon getImage(String name) {
-        icon = new ImageIcon("");
-        return icon;
-    }
-
 }

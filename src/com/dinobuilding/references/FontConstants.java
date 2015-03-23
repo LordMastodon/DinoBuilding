@@ -9,6 +9,6 @@ import java.awt.*;
  */
 public class FontConstants {
 
-    public static Font font =FontHandler.getFont();
+    public static Font font = FontHandler.getFont();
 
 }

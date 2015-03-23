@@ -1,10 +1,13 @@
 package com.dinobuilding.paleontology;
 
 import com.dinobuilding.dinosaur.Dinosaur;
+import com.dinobuilding.dinosaur.Dinosaurs;
 import com.dinobuilding.utilities.DinoBuildingGameObject;
 import com.dinobuilding.utilities.DinoBuildingMapObject;
 
 import javax.swing.*;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Created by Nate on 11/28/2014.
@@ -15,7 +18,7 @@ public class MapRegion extends DinoBuildingMapObject {
 
     ImageIcon displayImage;
 
-    Dinosaur[] possibleDinosaurs = new Dinosaur[]{};
+    public List<Dinosaur> possibleDinosaurs = new ArrayList<Dinosaur>();
 
     public void setX(int x) {
         this.x = x;
@@ -41,21 +44,19 @@ public class MapRegion extends DinoBuildingMapObject {
         return displayImage;
     }
 
-    public void setPossibleDinosaurs(Dinosaur[] possibleDinosaurs) {
+    public void setPossibleDinosaurs(ArrayList<Dinosaur> possibleDinosaurs) {
         this.possibleDinosaurs = possibleDinosaurs;
     }
 
     public boolean isPossibleDinosaur(Dinosaur dinosaur) {
-        for (int i = 0; i < possibleDinosaurs.length; i++) {
-            if (dinosaur == possibleDinosaurs[i]) {
-                return true;
-            }
+        if(possibleDinosaurs.contains(dinosaur)) {
+            return true;
         }
 
         return false;
     }
 
-    public Dinosaur[] getPossibleDinosaurs() {
+    public List<Dinosaur> getPossibleDinosaurs() {
         return possibleDinosaurs;
     }
 }
