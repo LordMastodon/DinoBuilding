@@ -22,31 +22,20 @@ public class BuildingScreen extends JPanel {
             @Override
             public void run() {
                 while (running) {
-
                     repaint();
-
-                    if (running) {
-                        try {
+                    try {
                             Thread.sleep(40);
                         } catch (InterruptedException ex) {
+                            ex.printStackTrace();
                         }
-                    }
                 }
             }
         });
-
         t.start();
-
     }
 
     public void stop() {
-
-        if (running) {
-
             running = false;
-
-        }
-
     }
 
     @Override
