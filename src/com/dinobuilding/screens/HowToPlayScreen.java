@@ -10,26 +10,27 @@ import java.io.IOException;
 import javax.swing.JPanel;
 
 import com.dinobuilding.Window;
+import com.dinobuilding.references.FontConstants;
+import com.dinobuilding.references.StringConstants;
 import com.dinobuilding.utilities.FontHandler;
 
 @SuppressWarnings("serial")
 public class HowToPlayScreen extends JPanel {
 	
-	public HowToPlayScreen() throws IOException, FontFormatException {
+	public HowToPlayScreen() {
+
 	}
-	
-	public Font gameFont = FontHandler.getFont();
 //	
 	@Override
     public void paintComponent(Graphics g) {
 		super.paintComponent(g);
         Graphics2D g2d = (Graphics2D) g.create();
-    	g2d.setFont(gameFont.deriveFont(Font.PLAIN, 24));
+    	g2d.setFont(FontConstants.font.deriveFont(Font.PLAIN, 24));
     	
     	g.drawImage(Window.background.getImage(), 0, 0, Window.screenWidth, Window.screenHeight, Window.observer);
     	
-		int stringWidth = g2d.getFontMetrics(gameFont.deriveFont(Font.PLAIN, 24)).stringWidth("DinoBuilding!"); 
-    	g2d.drawString("DinoBuilding!", Window.screenWidth / 2 - (stringWidth / 2), Window.screenHeight / 3 - 150 - 20);
+		int stringWidth = g2d.getFontMetrics(FontConstants.font.deriveFont(Font.PLAIN, 24)).stringWidth(StringConstants.dinobuilding);
+    	g2d.drawString(StringConstants.dinobuilding, Window.screenWidth / 2 - (stringWidth / 2), Window.screenHeight / 3 - 150 - 20);
         g2d.dispose();
     }
 //    

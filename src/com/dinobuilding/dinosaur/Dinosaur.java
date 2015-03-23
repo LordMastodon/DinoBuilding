@@ -136,10 +136,9 @@ public class Dinosaur extends DinoBuildingGameObject {
     public boolean onEnraged() {
         if(enraged) {
             this.onEnraged.enrage();
-            return enraged;
-        } else {
-            return enraged;
         }
+
+        return enraged;
     }
 
     public void setOnWrongFoodEatenEvent(WrongFoodEatenEvent e) {

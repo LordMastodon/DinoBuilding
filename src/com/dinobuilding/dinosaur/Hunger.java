@@ -5,7 +5,15 @@ package com.dinobuilding.dinosaur;
  */
 public class Hunger {
 
-    Dinosaur dino = new Dinosaur();
+    private Dinosaur dino = new Dinosaur();
+
+    public void setDino(Dinosaur dino1) {
+        this.dino = dino1;
+    }
+
+    public Dinosaur getDino() {
+        return this.dino;
+    }
 
     public void changeHunger(boolean reduce, int change) {
         if(reduce) {

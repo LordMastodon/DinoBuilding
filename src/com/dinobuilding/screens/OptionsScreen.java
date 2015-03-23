@@ -14,6 +14,8 @@ import javax.swing.JPanel;
 
 import com.dinobuilding.Window;
 import com.dinobuilding.menufeatures.MenuButton;
+import com.dinobuilding.references.FontConstants;
+import com.dinobuilding.references.StringConstants;
 import com.dinobuilding.utilities.FontHandler;
 
 @SuppressWarnings("serial")
@@ -21,8 +23,6 @@ public class OptionsScreen extends JPanel {
 
 	int screenWidth = Window.screenWidth;
 	int screenHeight = Window.screenHeight;
-	
-	public Font gameFont = FontHandler.getFont();
 	
 	public OptionsScreen() throws FontFormatException, IOException {
 		setLayout(new GroupLayout(this));
@@ -45,12 +45,12 @@ public class OptionsScreen extends JPanel {
     public void paintComponent(Graphics g) {
 		super.paintComponent(g);
         Graphics2D g2d = (Graphics2D) g.create();
-    	g2d.setFont(gameFont.deriveFont(Font.PLAIN, 24));
+    	g2d.setFont(FontConstants.font.deriveFont(Font.PLAIN, 24));
 
         g.drawImage(Window.background.getImage(), 0, 0, Window.screenWidth, Window.screenHeight, Window.observer);
 
-        int stringWidth = g2d.getFontMetrics(gameFont.deriveFont(Font.PLAIN, 24)).stringWidth("DinoBuilding!");
-    	g2d.drawString("DinoBuilding!", Window.screenWidth / 2 - (stringWidth / 2), Window.screenHeight / 3 - 150 - 20);
+        int stringWidth = g2d.getFontMetrics(FontConstants.font.deriveFont(Font.PLAIN, 24)).stringWidth(StringConstants.dinobuilding);
+    	g2d.drawString(StringConstants.dinobuilding, Window.screenWidth / 2 - (stringWidth / 2), Window.screenHeight / 3 - 150 - 20);
         g2d.dispose();
     
 	}

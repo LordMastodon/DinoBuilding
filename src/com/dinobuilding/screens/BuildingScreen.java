@@ -4,10 +4,12 @@ import java.awt.Dimension;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
 import java.awt.image.ImageObserver;
+import java.util.List;
 
 import javax.swing.JPanel;
 
 import com.dinobuilding.Window;
+import com.dinobuilding.utilities.DinoBuildingGameObject;
 import com.dinobuilding.utilities.RenderManagerForGameScreen;
 
 @SuppressWarnings("serial")
@@ -44,7 +46,9 @@ public class BuildingScreen extends JPanel {
         Graphics2D g2d = (Graphics2D) g.create();
 
         for(int i = 0; i < RenderManagerForGameScreen.objectsToRender.size(); i++) {
-            g2d.drawImage(RenderManagerForGameScreen.objectsToRender.get(i).getDisplayImage().getImage(), RenderManagerForGameScreen.objectsToRender.get(i).getX(), RenderManagerForGameScreen.objectsToRender.get(i).getY(), Window.observer);
+            DinoBuildingGameObject currentObject = RenderManagerForGameScreen.objectsToRender.get(i);
+
+            g2d.drawImage(currentObject.getDisplayImage().getImage(), currentObject.getX(), currentObject.getY(), Window.observer);
         }
 
         g2d.dispose();
