@@ -14,6 +14,7 @@ import javax.swing.JPanel;
 
 import com.dinobuilding.Window;
 import com.dinobuilding.menufeatures.MenuButton;
+import com.dinobuilding.utilities.FontHandler;
 
 @SuppressWarnings("serial")
 public class OptionsScreen extends JPanel {
@@ -21,7 +22,7 @@ public class OptionsScreen extends JPanel {
 	int screenWidth = Window.screenWidth;
 	int screenHeight = Window.screenHeight;
 	
-	public Font gameFont = Font.createFont(Font.TRUETYPE_FONT, new File("resources/font/DinoBuilding.ttf"));
+	public Font gameFont = FontHandler.getFont();
 	
 	public OptionsScreen() throws FontFormatException, IOException {
 		setLayout(new GroupLayout(this));

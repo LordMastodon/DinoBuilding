@@ -10,6 +10,7 @@ import java.io.IOException;
 import javax.swing.JPanel;
 
 import com.dinobuilding.Window;
+import com.dinobuilding.utilities.FontHandler;
 
 @SuppressWarnings("serial")
 public class HowToPlayScreen extends JPanel {
@@ -17,7 +18,7 @@ public class HowToPlayScreen extends JPanel {
 	public HowToPlayScreen() throws IOException, FontFormatException {
 	}
 	
-	public Font gameFont = Font.createFont(Font.TRUETYPE_FONT, new File("resources/font/DinoBuilding.ttf"));
+	public Font gameFont = FontHandler.getFont();
 //	
 	@Override
     public void paintComponent(Graphics g) {

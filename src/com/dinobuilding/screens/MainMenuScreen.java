@@ -14,6 +14,7 @@ import javax.swing.JPanel;
 
 import com.dinobuilding.Window;
 import com.dinobuilding.menufeatures.MenuButton;
+import com.dinobuilding.utilities.FontHandler;
 
 @SuppressWarnings("serial")
 public class MainMenuScreen extends JPanel {
@@ -28,7 +29,7 @@ public class MainMenuScreen extends JPanel {
     //Width is 1366 pixels
     //Height is 768 pixels
 	
-	public Font gameFont = Font.createFont(Font.TRUETYPE_FONT, new File("resources/font/DinoBuilding.ttf"));
+	public Font gameFont = FontHandler.getFont();
 	
 	public MainMenuScreen() throws FontFormatException, IOException {
 		setLayout(new GroupLayout(this));

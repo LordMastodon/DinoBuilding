@@ -1,5 +1,7 @@
 package com.dinobuilding.menufeatures;
 
+import com.dinobuilding.utilities.FontHandler;
+
 import java.awt.Font;
 import java.awt.FontFormatException;
 import java.io.File;
@@ -14,7 +16,7 @@ public class MenuButton extends JButton {
 
     public ImageIcon redButton = new ImageIcon("resources/menubuttons/RedButton.png");
 
-    public Font gameFont = Font.createFont(Font.TRUETYPE_FONT, new File("resources/font/DinoBuilding.ttf"));
+    public Font gameFont = FontHandler.getFont();
 
     public MenuButton(String text, String actionCommand, int x, int y) throws FontFormatException, IOException {
         this.setText(text);
