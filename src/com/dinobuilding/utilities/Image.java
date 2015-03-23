@@ -10,7 +10,13 @@ public class Image extends ImageIcon {
     ImageIcon icon;
     String name;
 
-    public Image(String name) {
+    public Image(String pathToImage, String name) {
+        super(pathToImage);
+
         this.name = name;
+    }
+
+    public String getName() {
+        return name;
     }
 }
